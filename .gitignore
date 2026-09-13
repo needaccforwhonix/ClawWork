@@ -1,81 +1,73 @@
-PROJECT.md
-SETUP.md
-dev/
-docs/
-tests/
-e2b-templates/
-clawmode_legacy
-*.env
-node_modules/
-CLAUDE.md
-# Large data directories
-gdpval/
-livebench/data/tasks/gdpval/
-explore_gdpval.py
-# Python
-__pycache__/
-*.py[cod]
+
+*~
 *$py.class
-*.so
-.Python
+# Agent data (can be large)
+AI-Trader/data/agent_data/*/log/
+AI-Trader/data/agent_data/*/memory/
 build/
+CLAUDE.md
+clawmode_legacy
+clawmode_legacy/
+dev/
 develop-eggs/
 dist/
+docs/
 downloads/
-eggs/
+.DS_Store
+e2b-templates/
+*.egg
+*.egg-info/
 .eggs/
+eggs/
+*.env
+.env
+env/
+ENV/
+!.env.example
+# Environment variables
+.env.local
+explore_gdpval.py
+# Frontend build output
+# frontend dependencies
+frontend/dist/
+frontend/node_modules/
+frontend/public/data/
+gdpval/
+# Generated static data for GitHub Pages (scripts/generate_static_data.py)
+# IDE
+.idea/
+.installed.cfg
+# Large data directories
+# Legacy code
 lib/
 lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
-venv/
-ENV/
-env/
-.venv
-
-# Environment variables
-.env
-.env.local
-!.env.example
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Agent data (can be large)
-livebench/data/agent_data/*/memory/
 livebench/data/agent_data/*/log/
-AI-Trader/data/agent_data/*/memory/
-AI-Trader/data/agent_data/*/log/
-
-# Reference files (can be very large)
-**/reference_files/
-# frontend dependencies
-frontend/node_modules/
-
-# Generated static data for GitHub Pages (scripts/generate_static_data.py)
-frontend/public/data/
-
-# Frontend build output
-frontend/dist/
-# Test outputs
-test_agent/
+livebench/data/agent_data/*/memory/
 livebench/data/tasks/gdpval
+livebench/data/tasks/gdpval/
 logs/
-
-# Legacy code
-clawmode_legacy/
+node_modules/
+# OS
+parts/
+PROJECT.md
+__pycache__/
+*.py[cod]
+# Python
+.Python
+**/reference_files/
+# Reference files (can be very large)
+sdist/
+SETUP.md
+*.so
+*.swo
+*.swp
+test_agent/
+# Test outputs
+tests/
+Thumbs.db
+var/
+.venv
+venv/
+# Virtual environments
+.vscode/
+wheels/
